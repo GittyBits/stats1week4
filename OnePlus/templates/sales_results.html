@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis Results</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #6200ea;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Sales Analysis Results</h2>
+        <p>Population standard deviation of sales of OnePlus: {{ results.sigma_x }}</p>
+        <p>Sample standard deviation of sales of BBK Electronics: {{ results.sample_sigma_y }}</p>
+        <p>Sample co-variance between the sales of OnePlus and BBK Electronics: {{ results.covariance }}</p>
+        <p>Correlation coefficient between the sales of OnePlus and BBK Electronics: {{ results.correlation_coefficient }}</p>
+        <p>Linear Relationship between the sales of OnePlus and BBK Electronics: {{ results.relationship }}</p>
+        <a href="/" class="btn">Go Back</a>
+    </div>
+</body>
+</html>

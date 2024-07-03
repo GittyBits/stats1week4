@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Conditions Analysis Results</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #6200ea;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Economic Conditions Analysis Results</h2>
+        <p>Proportion of total dull students: {{ results.proportion_dull }}</p>
+        <p>Proportion of total students with poor economic conditions: {{ results.proportion_total_poor }}</p>
+        <p>Proportion of students with good economic conditions who are borderline: {{ results.proportion_good_borderline }}</p>
+        <p>Percentage of bright students with poor economic conditions: {{ results.percentage_bright_poor }}%</p>
+        <p>Percentage of average students with good economic conditions: {{ results.percentage_average_good }}%</p>
+        <a href="/" class="btn">Go Back</a>
+    </div>
+</body>
+</html>

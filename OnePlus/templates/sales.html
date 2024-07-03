@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data Analysis</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Enter Sales Data</h2>
+            <form action="/sales_analysis" method="post">
+                <div class="input-group">
+                    <label for="oneplus_data">OnePlus Data (comma-separated)</label>
+                    <input type="text" id="oneplus_data" name="oneplus_data" placeholder="Enter OnePlus data">
+                </div>
+                <div class="input-group">
+                    <label for="bbk_data">BBK Electronics Data (comma-separated)</label>
+                    <input type="text" id="bbk_data" name="bbk_data" placeholder="Enter BBK data">
+                </div>
+                <button class="btn" type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

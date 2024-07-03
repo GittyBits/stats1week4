@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Conditions Analysis</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Enter Economic Conditions Data</h2>
+            <form action="/economic_analysis" method="post">
+                <div class="input-group">
+                    <label for="economic_data_good">Students with Good Economic Conditions (comma-separated)</label>
+                    <input type="text" id="economic_data_good" name="economic_data_good" placeholder="Enter data">
+                </div>
+                <div class="input-group">
+                    <label for="economic_data_poor">Students with Poor Economic Conditions (comma-separated)</label>
+                    <input type="text" id="economic_data_poor" name="economic_data_poor" placeholder="Enter data">
+                </div>
+                <button class="btn" type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
